@@ -169,27 +169,169 @@ button{
 }
 /* Hero Section End */
 
-/* Card Section Start */
-.card-wrapper{
+.slider{
+    overflow: hidden;
     padding-top: 50px;
-    flex-wrap: wrap;
     justify-content: center;
     display: flex;
     width: 100%;
-    gap: 20px;
 }
-.card1{
-    height: 350px;
-    width: 250px;
+
+.slider-track{
+    gap: 30px;
+    display: flex;
+    animation: bannermove 15s linear infinite;
 }
-.imgwrapper {
+
+.s-card{
+    width: 273px;
+    height: 340px;
+}
+
+.b-radius{
+    color: #0c0a2c;
     border-radius: 50px;
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
-.imgwrapper img{
+@keyframes bannermove {
+    0% {
+      transform: translateX(20%);
+    }
+    100% {
+      transform: translateX(-20%);
+    }
+  }
+
+/* Card Section Start */
+
+ card p{
+    margin-top: 100px;
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-wrapper{
+    padding-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.card1{
+    width: 300px;
+    height: 250px;
+}
+.imgwrapper {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.imgwrapper img, .b-radius img{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+/* Card Section End */
+
+/* More Btn Section Start */
+.morebtn-sec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .more-btn{
+      font-size: 14px;
+      font-weight: 550;
+      text-align: center;
+      line-height: 56px;
+      height: 56px;
+      width: 210px;
+      border: 1px solid black;
+      border-radius: 50px;
+ }
+/* More Btn Section End */
+
+/* Next Section Start */
+.fyn{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ffda79;
+    width: 100%;
+}
+.fyn h2{
+    color: #0c0a2c;
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fyn p{
+    color: #0c0a2c;
+    line-height: 35px;
+    width: 43%;
+    text-align: center;
+    font-size: 20px;
+}
+.f-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.f-btn .btn1{
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 56px;
+    text-align: center;
+    height: 56px;
+    width: 156px;
+    background-color: #0c0a2c;
+}
+.f-btn .btn2{
+    cursor: pointer;
+    border-radius: 50px;
+    color: #0c0a2c;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 56px;
+    text-align: center;
+    height: 56px;
+    width: 170px;
+    background-color:white;
+}
+.fyn a{
+    text-decoration: underline;
+}
+/* Next Section Start */
+
+/* Bottom Footer Section Start */
+.footer-bottom{
+    background-color:white;
+
+    align-items: center;
+    height: 109px;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+}
+.fb-col1{
+    gap: 20px;
+    display: flex;
 }
