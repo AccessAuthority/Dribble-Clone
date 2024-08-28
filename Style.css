@@ -231,7 +231,7 @@ button{
     width: 100%;
     overflow: hidden;
 }
-.imgwrapper img, .b-radius img{
+.imgwrapper img,.imgwrapper video, .b-radius img{
     object-fit: cover;
     height: 100%;
     width: 100%;
