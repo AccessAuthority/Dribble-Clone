@@ -339,3 +339,44 @@ button{
     display: flex;
 }
 /* Bottom Footer Section End */
+
+.card1{
+    position: relative;
+}
+.hoverBox{
+    color: white;
+    height: 50px;
+    width: 100%;
+    background:black;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* display: none; */
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card1:hover .hoverBox{
+    /* display: block; */
+    opacity: 1;
+    transition: .3s;
+}
+
+.grp11{
+    font-size: 20px;
+}
+
+.grp12 i{
+    color: #0c0a2c;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
