@@ -321,7 +321,7 @@ button{
 /* Bottom Footer Section Start */
 .footer-bottom{
     background-color:white;
-
+    color: #6e6d7a;
     align-items: center;
     height: 109px;
     padding-left: 70px;
@@ -331,7 +331,11 @@ button{
     width: 100%;
     display: flex;
 }
+.footer-bottom a{
+    color: #6e6d7a;
+}
 .fb-col1{
     gap: 20px;
     display: flex;
 }
+/* Bottom Footer Section End */
