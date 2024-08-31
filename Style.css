@@ -124,6 +124,10 @@ button{
 }
 
 /* Hero Section Start */
+
+.ri-menu-2-line{
+   display: none;
+}
 .hero{
     padding-top: 90px;
     color: #0d0c22;
@@ -345,15 +349,17 @@ button{
 }
 .hoverBox{
     color: white;
-    height: 50px;
+    height: 60px;
     width: 100%;
-    background:black;
+    /* background-color: #000000; */
+    max-width: 100%;
     /* background-color: blue; */
     position: absolute;
     bottom: 0px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     /* display: none; */
+    font-weight: 600;
     opacity: 0;
     display: flex;
     flex-direction: row;
@@ -364,19 +370,116 @@ button{
 }
 
 .card1:hover .hoverBox{
-    /* display: block; */
     opacity: 1;
+    background:rgb(0, 0, 0,0.3);
     transition: .3s;
 }
-
-.grp11{
-    font-size: 20px;
-}
-
+t
 .grp12 i{
     color: #0c0a2c;
     font-size: 20px;
     padding: 10px;
     background-color: white;
     border-radius: 50%;
+}
+
+/* Media Query  */
+@media screen and (max-width: 600px) and (min-width:0px){
+    .signup{
+        display: block;
+    }
+    .log{
+        display: none;
+    }
+    .group1 a{
+        display: none;
+    }
+    .group1{
+        gap: 10px;
+    }
+    .group1 img{
+        display: block;
+    }
+    .searchbar{
+        font-size: 25px;
+        width: 50px;
+        background: none;
+    }
+    .searchbar:hover{
+        display: none;
+    }
+    .footer1{
+        gap: 23px;
+        flex-direction: column;
+    }
+    .f-items{
+        font-weight: 600;
+        line-height: 0px;
+        justify-content: center;
+        width: 350px;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .f-icons{
+       padding-bottom: 10px;
+    }
+    .footer-bottom{
+        display: none;
+    }
+    .fyn p{
+        color: #0c0a2c;
+        line-height: 25px;
+        width: 90%;
+        text-align: center;
+        font-size: 17px;
+    }
+    .fyn h2{
+        text-align: center;
+        width: 100%;
+        color: #0c0a2c;
+        font-size: 8vw;
+        font-weight: 500;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fyn h2 br{
+    display: none;
+}
+.card1{
+    width: 150px;
+    height: 100px;
+}
+card p{
+    margin-top: 70px;
+    font-size: 8.5vw;
+    text-align: center;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.hero{
+    gap: 15px;
+   height: 40vh; 
+   padding-top: 0;
+}
+.hero h1{
+    font-size: 30px;
+}
+.hero  p{
+    font-size: 15px;
+}
+.tagline{
+    margin-top: 100px;
+}
+.hoverBox{
+  height: 30px;
+  font-size: 10px;
+}
+.ri-menu-2-line{
+    line-height: 50px;
+    display: block;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.nav{
+    padding: 0 10px;
+}
 }
