@@ -18,7 +18,7 @@ This project is a clone of the Dribbble website's user interface, built using HT
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/accessauthortiy/dribbble-ui-clone.git
+   git clone https://github.com/accessauthortiy/dribbble-clone.git
    ```
 2. Navigate to the project directory:
    ```bash
